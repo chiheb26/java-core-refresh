@@ -5,7 +5,7 @@ public class FullTimeEmployee extends Employee {
 
     @Override
     public double calculatePay() {
-        return hoursWorked * hourlyRate;
+        return calculateBasePay();
     }
 
     @Override

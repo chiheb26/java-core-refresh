@@ -8,7 +8,7 @@ public class PayrollSystem {
         for (Employee emp : employees) {
             emp.introduce();
             System.out.println("Role: " + emp.getRole());
-            System.out.println("Monthly Pay: $" + emp.calculatePay());
+            System.out.printf("Monthly Pay: $%.2f%n", emp.calculatePay());
             System.out.println("--------------");
         }
     }

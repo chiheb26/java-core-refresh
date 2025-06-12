@@ -5,8 +5,7 @@ public class Contractor extends Employee {
 
     @Override
     public double calculatePay() {
-        // Contractors earn a 10% bonus
-        return (hoursWorked * hourlyRate) * 1.10;
+        return calculateBasePay() * 1.10;  // 10% bonus
     }
 
     @Override
