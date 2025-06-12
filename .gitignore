@@ -1,3 +1,10 @@
+.idea/
+*.iml
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
 # Compiled class file
 *.class
 
