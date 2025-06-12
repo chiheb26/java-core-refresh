@@ -1,14 +1,12 @@
-class Employee extends Person {
-    private String role;
+public abstract class Employee extends Person implements Payable {
+    protected int hoursWorked;
+    protected double hourlyRate;
 
-    public Employee(String name, int age, String role) {
-        super(name, age);
-        this.role = role;
+    public Employee(String name, int hoursWorked, double hourlyRate) {
+        super(name);
+        this.hoursWorked = hoursWorked;
+        this.hourlyRate = hourlyRate;
     }
 
-    @Override
-    public void introduce() {
-        super.introduce();
-        System.out.println("I work as a " + role);
-    }
+    public abstract String getRole();
 }
